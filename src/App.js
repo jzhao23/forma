@@ -6,6 +6,9 @@ import Quarter from './Quarter';
 
 const Container = styled.div`
   display: flex;
+  flexDirection: row;
+  justifyContent: space-evenly;
+  flex-wrap: wrap;
 `;
 class App extends React.Component {
 
