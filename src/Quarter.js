@@ -5,11 +5,11 @@ import Class from './Class';
 
 const Container = styled.div`
   margin: 8px;
-  border: 1px solid black;
+  border: 10px solid green;
   border-radius: 2px;
   width: 300px;
-  display: flex;
-  flex-direction: column;
+  height: 250px;
+  overflow: auto;
 `;
 const Title = styled.h3`
   padding: 8px;
