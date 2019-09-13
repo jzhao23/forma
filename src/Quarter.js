@@ -5,17 +5,20 @@ import Class from './Class';
 
 const Container = styled.div`
   margin: 8px;
-  border: 1px solid black;
+  border: 10px solid green;
   border-radius: 2px;
   width: 300px;
-  display: flex;
-  flex-direction: column;
+  height: 250px;
+  overflow: auto;
 `;
 const Title = styled.h3`
   padding: 8px;
+  padding-bottom: 2px;
+  margin: 2px;
 `;
 const ClassList = styled.div`
   padding: 8px;
+  padding-top: 0px;
   flex-grow: 1;
   min-height: 150px;
 `;
