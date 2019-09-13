@@ -13,9 +13,12 @@ const Container = styled.div`
 `;
 const Title = styled.h3`
   padding: 8px;
+  padding-bottom: 2px;
+  margin: 2px;
 `;
 const ClassList = styled.div`
   padding: 8px;
+  padding-top: 0px;
   flex-grow: 1;
   min-height: 150px;
 `;
