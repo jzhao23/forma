@@ -20,11 +20,15 @@ const dummyData = {
       id: 'ECON1',
       name: 'Introduction to Economics',
     },
+    'ECON50': {
+      id: 'ECON50',
+      name: 'Multivariate Economics',
+    },
   },
   quarters: {
     'Autumn 19': {
       id: 'Autumn 19',
-      classes: ['CS106A', 'ECON1'],
+      classes: ['CS106A', 'ECON1', 'ECON50'],
     },
     'Winter 20': {
       id: 'Winter 20',

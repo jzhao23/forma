@@ -9,7 +9,6 @@ const Container = styled.div`
   border-radius: 2px;
   width: 300px;
   height: 250px;
-  overflow: auto;
 `;
 const Title = styled.h3`
   padding: 8px;
@@ -21,6 +20,8 @@ const ClassList = styled.div`
   padding-top: 0px;
   flex-grow: 1;
   min-height: 150px;
+  max-height: 202px;
+  overflow: auto;
 `;
 
 class Quarter extends React.Component{
