@@ -7,8 +7,8 @@ const Container = styled.div`
   margin: 8px;
   border: 10px solid green;
   border-radius: 2px;
-  width: 300px;
-  height: 250px;
+  width: 200px;
+  height: 150px;
 `;
 const Title = styled.h3`
   padding: 8px;
@@ -19,7 +19,7 @@ const ClassList = styled.div`
   padding: 8px;
   padding-top: 0px;
   flex-grow: 1;
-  height: 200px;
+  height: 100px;
   overflow: auto;
 `;
 

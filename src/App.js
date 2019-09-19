@@ -3,13 +3,22 @@ import {DragDropContext} from 'react-beautiful-dnd';
 import styled from 'styled-components';
 import dummyData from './dummyData';
 import Quarter from './Quarter';
+import Sidebar from './Sidebar'
 
 const Container = styled.div`
   display: flex;
+  flex: 4;
   flexDirection: row;
   justifyContent: space-evenly;
   flex-wrap: wrap;
+  border: 10px solid red;
 `;
+
+const SidebarContainer = styled.div`
+  display: flex;
+  border: 10px solid blue;
+`
+
 class App extends React.Component {
 
   constructor(){
@@ -84,14 +93,17 @@ class App extends React.Component {
   render() {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-      <Container>
-          {this.state.quarterOrder.map(quarterId => {
-            const quarter = this.state.quarters[quarterId];
-            const classes = quarter.classes.map(classId => this.state.allClasses[classId]);
+          <SidebarContainer>
+            <Sidebar />
+          <Container>
+              {this.state.quarterOrder.map(quarterId => {
+                const quarter = this.state.quarters[quarterId];
+                const classes = quarter.classes.map(classId => this.state.allClasses[classId]);
 
-            return <Quarter key={quarter.id} quarter={quarter} classes={classes} />;
-          })}
-      </Container>
+                return <Quarter key={quarter.id} quarter={quarter} classes={classes} />;
+              })}
+          </Container>
+        </SidebarContainer>
       </DragDropContext>
     );
   }
